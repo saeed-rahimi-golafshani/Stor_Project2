@@ -1,0 +1,78 @@
+{
+    blogs{
+        _id
+        title
+        short_text
+        text
+        image
+        imageURL
+        tags
+        author {
+            _id
+            firstname
+            lastname
+        }
+        category {
+            _id
+            title
+        }
+    }
+} 
+
+{ 
+	blogwithId(id: "6423e48d56c41a521d43d3b5"){
+    _id
+    title
+    short_text
+    text
+    image
+    imageURL
+    tags
+    category{
+      _id
+      title
+    }
+    author{
+      _id
+      firstname
+      lastname
+    }
+  }
+}
+
+{
+  blogAccordingToCategory(category: "642f966fbbe4fc88acb0854d"){
+    _id
+    title
+    text
+    short_text
+    image
+    tags
+    imageURL
+    category{
+      _id
+      title
+    }
+    author{
+      _id
+      firstname
+      lastname
+    }
+  }
+}
+
+{
+  getUserBookmarkBlog{
+    _id
+    title
+    bookmarks{
+      _id
+      firstname
+      lastname
+    }
+  }
+}
+
+
+       
+        

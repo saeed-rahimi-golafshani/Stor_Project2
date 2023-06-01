@@ -1,0 +1,90 @@
+{
+  course{
+    _id
+    title
+    short_text
+    text
+    image
+    imageURL
+    tags
+    price
+    discount
+    count
+    type
+    status
+    category{
+      _id
+      title
+    }
+    teacher{
+      _id
+      firstname
+      lastname
+    }
+    chapters{
+      _id
+      title
+      text
+      episodes{
+        _id
+        title
+        text
+        type
+        time
+        videoAddress
+        videoAddressURL
+      }      
+    }
+  }
+}
+
+{
+  CourseAccordingToCategoryResolve(category: "642f96f9bbe4fc88acb08582"){
+    _id
+    title
+   	price
+    teacher{
+      _id
+      firstname
+      lastname
+    }
+  }
+}
+
+
+     {
+  getUserBookmarkCourse{
+    _id
+    title
+    short_text
+    text
+    image
+    imageURL
+    tags
+    price
+    discount
+    count
+    type
+    teacher{
+            _id
+            firstname
+            lastname
+        }
+    likes{
+      _id
+      firstname
+      lastname
+    }
+    dislikes{
+      _id
+      firstname
+      lastname
+    }
+    bookmarks{
+      _id
+      firstname
+      lastname
+    }
+  }
+}  
+        
